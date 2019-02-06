@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jQuery.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Salary Calculator</title>
+</head>
+<body>
+<div>
+    <h1>
+        Salary Calculator
+    </h1>
+</div>
+<div>
+    <h2>
+        Add Employee
+    </h2>
+    <input type="text" id="firstName" placeholder="First name"></input>
+    <input type="text" id="lastName" placeholder="Last Name"></input>
+    <input type="number" id="ID" placeholder="ID"></input>
+    <input type="text" id="title" placeholder="Title"></input>
+    <input type="number" id="annualSalary" placeholder="Annual Salary"></input>
+    <button id="submitButton">Submit</button>
+</div>
+
+<div>
+   <h2>
+     Employees
+   </h2>   
+
+   <table id = "employeeTable">
+        <head>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th> 
+              <th>ID</th>  
+              <th>Title</th> 
+              <th>Annual Salary</th> 
+            </tr>
+        <tbody id= "employeeTableBody">
+           
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <!-- <td><button class="deleteButton">Delete</button></td> -->
+            </tr>
+            
+        </tbody>
+        </head>
+    </table>
+</div>
+    
+<div id= "MonthlyDiv">
+    Total Monthly: $<span id = "totalMonthlyDiv"></span>
+</div>
+    
+</body>
+</html>
